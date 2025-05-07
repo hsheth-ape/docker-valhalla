@@ -18,7 +18,7 @@ services:
       # - tile_urls=https://download.geofabrik.de/europe/andorra-latest.osm.pbf https://download.geofabrik.de/europe/albania-latest.osm.pbf
       - server_threads=2  # determines how many threads will be used to run the valhalla server
       - serve_tiles=True  # If True, starts the service. If false, stops after building the graph.
-      - use_tiles_ignore_pbf=False  # load existing valhalla_tiles.tar directly
+      #- use_tiles_ignore_pbf=False  # load existing valhalla_tiles.tar directly
       - tileset_name=valhalla_tiles  # name of the resulting graph on disk
       - build_elevation=False  # build elevation with "True" or "Force": will download only the elevation for areas covered by the graph tiles
       - build_admins=False  # build admins db with "True" or "Force"
